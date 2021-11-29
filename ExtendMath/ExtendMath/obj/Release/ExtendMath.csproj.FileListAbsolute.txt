@@ -1,0 +1,7 @@
+D:\Projects\c#\ExtendMath\ExtendMath\bin\Release\ExtendMath.dll
+D:\Projects\c#\ExtendMath\ExtendMath\bin\Release\ExtendMath.pdb
+D:\Projects\c#\ExtendMath\ExtendMath\obj\Release\ExtendMath.csproj.CoreCompileInputs.cache
+D:\Projects\c#\ExtendMath\ExtendMath\obj\Release\ExtendMath.dll
+D:\Projects\c#\ExtendMath\ExtendMath\obj\Release\ExtendMath.pdb
+D:\Projects\c#\ExtendMath\ExtendMath\bin\Release\ExtendMath.xml
+D:\Projects\c#\ExtendMath\ExtendMath\obj\Release\ExtendMath.csproj.AssemblyReference.cache

@@ -1,0 +1,621 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExtendMath</name>
+    </assembly>
+    <members>
+        <member name="T:ExtendMath.EMath">
+            <summary>
+            Main class for math functions and classes
+            </summary>
+        </member>
+        <member name="T:ExtendMath.EMath.Vector2">
+            <summary>
+            Vector with 2 elements
+            </summary>
+        </member>
+        <member name="F:ExtendMath.EMath.Vector2.X">
+            <summary>
+            Element value
+            </summary>
+        </member>
+        <member name="F:ExtendMath.EMath.Vector2.Y">
+            <summary>
+            Element value
+            </summary>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector2.#ctor">
+            <summary>
+            Empty constructor
+            </summary>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector2.#ctor(System.Single,System.Single)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector2.op_Addition(ExtendMath.EMath.Vector2,ExtendMath.EMath.Vector2)">
+            <summary>
+            Add vector b to a and return the sum
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector2.op_Addition(ExtendMath.EMath.Vector2,System.Single)">
+            <summary>
+            Add float value to vector and return the sum
+            </summary>
+            <param name="a"></param>
+            <param name="f"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector2.op_Subtraction(ExtendMath.EMath.Vector2,ExtendMath.EMath.Vector2)">
+            <summary>
+            Sub vector b to a and return the sum
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector2.op_Subtraction(ExtendMath.EMath.Vector2,System.Single)">
+            <summary>
+            Sub float value to vector and return the sum
+            </summary>
+            <param name="a"></param>
+            <param name="f"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector2.op_Multiply(ExtendMath.EMath.Vector2,ExtendMath.EMath.Vector2)">
+            <summary>
+            Multiply vector b to a and return the sum
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector2.op_Multiply(ExtendMath.EMath.Vector2,System.Single)">
+            <summary>
+            Multiply float value to vector and return the sum
+            </summary>
+            <param name="a"></param>
+            <param name="f"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector2.op_Division(ExtendMath.EMath.Vector2,ExtendMath.EMath.Vector2)">
+            <summary>
+            Divide vector b to a and return the sum
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector2.op_Division(ExtendMath.EMath.Vector2,System.Single)">
+            <summary>
+            Multiply float value to vector and return the sum
+            </summary>
+            <param name="a"></param>
+            <param name="f"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ExtendMath.EMath.Vector3">
+            <summary>
+            Vector with 3 elements
+            </summary>
+        </member>
+        <member name="F:ExtendMath.EMath.Vector3.Z">
+            <summary>
+            Element value
+            </summary>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector3.#ctor">
+            <summary>
+            Empty constructor
+            </summary>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector3.RotatedX(System.Single)">
+            <summary>
+            Return new rotated vector by the X axis
+            </summary>
+            <param name="angle"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector3.RotatedY(System.Single)">
+            <summary>
+            Return new rotated vector by the Y axis
+            </summary>
+            <param name="angle"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector3.RotatedZ(System.Single)">
+            <summary>
+            Return new rotated vector by the Z axis
+            </summary>
+            <param name="angle"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector3.#ctor(System.Single,System.Single,System.Single)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="z"></param>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector3.op_Addition(ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3)">
+            <summary>
+            Add vector b to a and return the sum
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector3.op_Addition(ExtendMath.EMath.Vector3,System.Single)">
+            <summary>
+            Add float value to vector and return the sum
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector3.op_Subtraction(ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3)">
+            <summary>
+            Decrease vector b from a and return sum
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector3.op_Subtraction(ExtendMath.EMath.Vector3,System.Single)">
+            <summary>
+            Decrease float value from a and return sum
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector3.op_Multiply(ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3)">
+            <summary>
+            Multiply vector a and b and return sum
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector3.op_Multiply(ExtendMath.EMath.Vector3,System.Single)">
+            <summary>
+            Multiply vector a with float value and return sum
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector3.op_Multiply(ExtendMath.EMath.Vector3,ExtendMath.EMath.Matrix3x3)">
+            <summary>
+            Multiply vector with matrix and return sum
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector3.op_Division(ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3)">
+            <summary>
+            Divide vector a with b and return sum
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector3.op_Division(ExtendMath.EMath.Vector3,System.Single)">
+            <summary>
+            Divide vector with float value and return sum
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Vector3.op_Implicit(ExtendMath.EMath.Vector3)~System.Single">
+            <summary>
+            Implicit to float. Return the sum of all elements
+            </summary>
+            <param name="v"></param>
+        </member>
+        <member name="T:ExtendMath.EMath.Matrix3x3">
+            <summary>
+            Matrix with 9 elements
+            </summary>
+        </member>
+        <member name="F:ExtendMath.EMath.Matrix3x3.M11">
+            <summary>
+            Element value
+            </summary>
+        </member>
+        <member name="F:ExtendMath.EMath.Matrix3x3.M12">
+            <summary>
+            Element value
+            </summary>
+        </member>
+        <member name="F:ExtendMath.EMath.Matrix3x3.M13">
+            <summary>
+            Element value
+            </summary>
+        </member>
+        <member name="F:ExtendMath.EMath.Matrix3x3.M21">
+            <summary>
+            Element value
+            </summary>
+        </member>
+        <member name="F:ExtendMath.EMath.Matrix3x3.M22">
+            <summary>
+            Element value
+            </summary>
+        </member>
+        <member name="F:ExtendMath.EMath.Matrix3x3.M23">
+            <summary>
+            Element value
+            </summary>
+        </member>
+        <member name="F:ExtendMath.EMath.Matrix3x3.M31">
+            <summary>
+            Element value
+            </summary>
+        </member>
+        <member name="F:ExtendMath.EMath.Matrix3x3.M32">
+            <summary>
+            Element value
+            </summary>
+        </member>
+        <member name="F:ExtendMath.EMath.Matrix3x3.M33">
+            <summary>
+            Element value
+            </summary>
+        </member>
+        <member name="P:ExtendMath.EMath.Matrix3x3.V1">
+            <summary>
+            Return new vector contain m11,m12,m13 elements
+            </summary>
+        </member>
+        <member name="P:ExtendMath.EMath.Matrix3x3.V2">
+            <summary>
+            Return new vector contain m21,m22,m23 elements
+            </summary>
+        </member>
+        <member name="P:ExtendMath.EMath.Matrix3x3.V3">
+            <summary>
+            Return new vector contain m21,m22,m23 elements
+            </summary>
+        </member>
+        <member name="M:ExtendMath.EMath.Matrix3x3.#ctor">
+            <summary>
+            Empty constructor
+            </summary>
+        </member>
+        <member name="M:ExtendMath.EMath.Matrix3x3.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="m11"></param>
+            <param name="m12"></param>
+            <param name="m13"></param>
+            <param name="m21"></param>
+            <param name="m22"></param>
+            <param name="m23"></param>
+            <param name="m31"></param>
+            <param name="m32"></param>
+            <param name="m33"></param>
+        </member>
+        <member name="M:ExtendMath.EMath.Matrix3x3.#ctor(ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3)">
+            <summary>
+            Constructor from 3 vectors
+            </summary>
+            <param name="v1"></param>
+            <param name="v2"></param>
+            <param name="v3"></param>
+        </member>
+        <member name="M:ExtendMath.EMath.Matrix3x3.op_Multiply(ExtendMath.EMath.Matrix3x3,ExtendMath.EMath.Matrix3x3)">
+            <summary>
+            Multiply matrix a with b and return sum
+            </summary>
+            <param name="m1"></param>
+            <param name="m2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Matrix3x3.op_Multiply(ExtendMath.EMath.Matrix3x3,ExtendMath.EMath.Vector3)">
+            <summary>
+            Multiply matrix on vector and return sum
+            </summary>
+            <param name="m1"></param>
+            <param name="m2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Matrix3x3.op_Addition(ExtendMath.EMath.Matrix3x3,ExtendMath.EMath.Vector3)">
+            <summary>
+            Add vector values to the matrix
+            </summary>
+            <param name="m"></param>
+            <param name="v"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ExtendMath.EMath.Triangle">
+            <summary>
+            Triangle with vertices/normals and texture coordinates
+            </summary>
+        </member>
+        <member name="F:ExtendMath.EMath.Triangle.V">
+            <summary>
+            Vertices
+            </summary>
+        </member>
+        <member name="F:ExtendMath.EMath.Triangle.VN">
+            <summary>
+            Normals
+            </summary>
+        </member>
+        <member name="F:ExtendMath.EMath.Triangle.vt1">
+            <summary>
+            Texture coordinate 1
+            </summary>
+        </member>
+        <member name="F:ExtendMath.EMath.Triangle.vt2">
+            <summary>
+            Texture coordinate 2
+            </summary>
+        </member>
+        <member name="F:ExtendMath.EMath.Triangle.vt3">
+            <summary>
+            Texture coordinate 3
+            </summary>
+        </member>
+        <member name="M:ExtendMath.EMath.Triangle.#ctor">
+            <summary>
+            Empty constructor
+            </summary>
+        </member>
+        <member name="M:ExtendMath.EMath.Triangle.#ctor(ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3)">
+            <summary>
+            Construct only vertices
+            <para>All others properties will be NULL</para>
+            </summary>
+            <param name="v1"></param>
+            <param name="v2"></param>
+            <param name="v3"></param>
+        </member>
+        <member name="M:ExtendMath.EMath.Triangle.#ctor(ExtendMath.EMath.Matrix3x3,ExtendMath.EMath.Matrix3x3,ExtendMath.EMath.Vector2,ExtendMath.EMath.Vector2,ExtendMath.EMath.Vector2)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="V"></param>
+            <param name="VN"></param>
+            <param name="vt1"></param>
+            <param name="vt2"></param>
+            <param name="vt3"></param>
+        </member>
+        <member name="M:ExtendMath.EMath.Triangle.#ctor(ExtendMath.EMath.Triangle)">
+            <summary>
+            Create copy from exist triangle
+            </summary>
+            <param name="copy"></param>
+        </member>
+        <member name="M:ExtendMath.EMath.Clamp(System.Single,System.Single,System.Single)">
+            <summary>
+            Clamp value to fixed range
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="val"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Dot(ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3)">
+            <summary>
+            Retrun dot product between vector a to b
+            </summary>
+            <param name="v1"></param>
+            <param name="v2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Lenght(ExtendMath.EMath.Vector3)">
+            <summary>
+            Return vector lenght
+            </summary>
+            <param name="v"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Lerp(System.Single,System.Single,System.Single)">
+            <summary>
+            Return linear interpolate between 2 floats
+            </summary>
+            <param name="v1"></param>
+            <param name="v2"></param>
+            <param name="ratio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Distance(ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3)">
+            <summary>
+            Return shortest distance between point to plane
+            </summary>
+            <param name="vec"></param>
+            <param name="plane"></param>
+            <param name="normal"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.PartOfFloat(System.Char)">
+            <summary>
+            Check if character is part of floating point
+            </summary>
+            <param name="c"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.ToByte(System.Single)">
+            <summary>
+            Converts float to byte
+            <para>Min:0.0 Max:1.0;</para>
+            </summary>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.TriangleAgainstClip(ExtendMath.EMath.Triangle)">
+            <summary>
+            Return clipped triangles
+            </summary>
+            <param name="plane"></param>
+            <param name="normal"></param>
+            <param name="triangle"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Normalize(ExtendMath.EMath.Vector3)">
+            <summary>
+            Return normalize vector
+            </summary>
+            <param name="v"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Cros(ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3)">
+            <summary>
+            Cross product between vector a to b
+            </summary>
+            <param name="v1"></param>
+            <param name="v2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Lerp(ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3,System.Single)">
+            <summary>
+            Return linear interpolate between two vectors
+            </summary>
+            <param name="v1"></param>
+            <param name="v2"></param>
+            <param name="ratio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.ProjectionVector(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Make projection vector
+            </summary>
+            <param name="fov"></param>
+            <param name="aspect"></param>
+            <param name="far"></param>
+            <param name="near"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.ForwardVector(System.Single,System.Single)">
+            <summary>
+            Return forward vector relative to yaw and pitch
+            </summary>
+            <param name="yaw"></param>
+            <param name="pitch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.RightVector(System.Single,System.Single)">
+            <summary>
+            Return right vector relative to yaw and pitch
+            </summary>
+            <param name="yaw"></param>
+            <param name="pitch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.IntersectPlane(ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3)">
+            <summary>
+            Return point where line intersect with plane
+            </summary>
+            <param name="plane"></param>
+            <param name="normal"></param>
+            <param name="start"></param>
+            <param name="end"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.NormalSurface(ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3)">
+            <summary>
+            Return normal surface of triangle normalized
+            </summary>
+            <param name="v1"></param>
+            <param name="v2"></param>
+            <param name="v3"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.NormalSurface(ExtendMath.EMath.Matrix3x3)">
+            <summary>
+            Return normal surface of triangle normalized
+            </summary>
+            <param name="v1"></param>
+            <param name="v2"></param>
+            <param name="v3"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.RotationXMatrix(System.Single)">
+            <summary>
+            Return rotation matrix rotated by X axis
+            </summary>
+            <param name="angle"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.RotationYMatrix(System.Single)">
+            <summary>
+            Return rotation matrix rotated by Y axis
+            </summary>
+            <param name="angle"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.RotationZMatrix(System.Single)">
+            <summary>
+            Return rotation matrix rotated by Z axis
+            </summary>
+            <param name="angle"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.RotationMatrix(System.Single,System.Single,System.Single)">
+            <summary>
+            Return optimize rotation matrix
+            </summary>
+            <param name="yaw"></param>
+            <param name="pitch"></param>
+            <param name="roll"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.ProjectionMatrix(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Return a projection matrix
+            </summary>
+            <param name="fov"></param>
+            <param name="aspect"></param>
+            <param name="near"></param>
+            <param name="far"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.ScaleMatrix(System.Single,System.Single,System.Single)">
+            <summary>
+            Return a scale matrix
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="z"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.PointAt(ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3)">
+            <summary>
+            Return point at matrix
+            </summary>
+            <param name="pos"></param>
+            <param name="target"></param>
+            <param name="up"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.Transpose(ExtendMath.EMath.Matrix3x3)">
+            <summary>
+            Return inverse matrix
+            </summary>
+            <param name="mat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendMath.EMath.LookAt(ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3,ExtendMath.EMath.Vector3)">
+            <summary>
+            Return look at matrix
+            </summary>
+            <param name="pos"></param>
+            <param name="target"></param>
+            <param name="up"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
