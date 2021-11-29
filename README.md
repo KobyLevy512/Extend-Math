@@ -1,5 +1,6 @@
 # Extend-Math
-Maths functions for easy 3D Graphics implement. Made for .Net Framework
+Maths functions for easy 3D Graphics implement. Made for .Net Framework.	
+
 /*      INCLUDE        */
 Classes: Vector2, Vector3, Matrix3x3, Triangle 
 Float return functions: Clamp, Dot product, Vector length, Linear interpolate, Distance... 
