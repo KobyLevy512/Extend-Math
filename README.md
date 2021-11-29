@@ -1,4 +1,4 @@
-# Extend-Math
+# Extend-Math dll info
 Maths functions for easy 3D Graphics implement.
 
 Made for .Net Framework.	
