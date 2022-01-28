@@ -13,6 +13,8 @@ Vector3 return functions: Normalize, Cross product, Projection, Forward, Right, 
 
 Mat3x3 return functions: Rotations, Scale, Point at, Transpose, Look at .
 
+Supported import files: Obj, Fbx.
+
 Other: Clipping triangles, Converters, float detecting.
 
 Include all operator overloading
